@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0054)https://www.home-internet-careers.com/cb1/suppress.cfm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" src="./suppress_files/cfform.js"></script>
+<script type="text/javascript" src="./suppress_files/masks.js"></script>
+
+	<title>Unsubscribe</title>
+
+<script type="text/javascript">
+	if (window.ColdFusion) ColdFusion.required['Email']=true;
+</script>
+<script type="text/javascript">
+<!--
+    _CF_checkCFForm_1 = function(_CF_this)
+    {
+        //reset on submit
+        _CF_error_exists = false;
+        _CF_error_messages = new Array();
+        _CF_error_fields = new Object();
+        _CF_FirstErrorField = null;
+
+        //form element Email required check
+        if( !_CF_hasValue(_CF_this['Email'], "TEXT", false ) )
+        {
+            _CF_onError(_CF_this, "Email", _CF_this['Email'].value, "Error in Email text.");
+            _CF_error_exists = true;
+        }
+
+
+        //display error messages and return success
+        if( _CF_error_exists )
+        {
+            if( _CF_error_messages.length > 0 )
+            {
+                // show alert() message
+                _CF_onErrorAlert(_CF_error_messages);
+                // set focus to first form error, if the field supports js focus().
+                if( _CF_this[_CF_FirstErrorField].type == "text" )
+                { _CF_this[_CF_FirstErrorField].focus(); }
+
+            }
+            return false;
+        }else {
+            return true;
+        }
+    }
+//-->
+</script>
+</head>
+<body bgcolor="#ECF5FF" topmargin="70">
+<table cellpadding="40" cellspacing="0" border="0" bordercolor="#000000" bgcolor="#FFFFFF" style="border:2px solid #000000;" align="center" width="520">
+	<tbody><tr>
+		<td align="center">
+			
+
+
+				<span style="font-size:10.0pt;font-family: verdana; arial;">Enter your email below to unsubscribe from this offer.<br>
+			<form name="CFForm_1" id="CFForm_1" action="https://www.home-internet-careers.com/cb1/Suppress.cfm?Add=Yes" method="POST" style="margin:2px;" onsubmit="return _CF_checkCFForm_1(this)">
+			Email:&nbsp;<input name="Email" id="Email" type="text"><input type="submit" value="Remove">
+			</form>
+
+			
+			
+		</span></td>
+	</tr>
+</tbody></table>
+
+
+</body></html>
