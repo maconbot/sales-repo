@@ -16,16 +16,16 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'WPExcelDB');
+define('DB_NAME', '*');
 
 /** MySQL database username */
-define('DB_USER', 'WPExcelDB');
+define('DB_USER', '*');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'Excel@02owm');
+define('DB_PASSWORD', '*');
 
 /** MySQL hostname */
-define('DB_HOST', 'WPExcelDB.db.8735795.hostedresource.com');
+define('DB_HOST', '*');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -42,14 +42,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'put1 your unique phrase here.');
-define('SECURE_AUTH_KEY',  'put 2your unique phrase here.');
-define('LOGGED_IN_KEY',    'put your3 unique phrase here.');
-define('NONCE_KEY',        'put your 4unique phrase here.');
-define('AUTH_SALT',        'put your unique5 6phrase here.');
-define('SECURE_AUTH_SALT', 'put your unique phrase7 here.');
-define('LOGGED_IN_SALT',   'put your unique phrase 8here.');
-define('NONCE_SALT',       'put your unique phrase here9.');
+define('AUTH_KEY',         '-');
+define('SECURE_AUTH_KEY',  '-');
+define('LOGGED_IN_KEY',    '-');
+define('NONCE_KEY',        '-');
+define('AUTH_SALT',        '-');
+define('SECURE_AUTH_SALT', '-');
+define('LOGGED_IN_SALT',   '-');
+define('NONCE_SALT',       '-');
 
 /**#@-*/
 
