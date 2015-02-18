@@ -1,0 +1,336 @@
+#content .errors,
+#content .notice
+{
+	background:#F2D1D1;
+	border:2px solid red;
+	padding:3px 6px;
+	margin:0px 0px 15px 0px;
+	width:500px;
+}
+#content .errors p,
+#content .errors li,
+#content .notice p,
+#content .notice li
+{
+	text-indent:0px;
+	color:red;
+	padding:0px;
+}
+#content .notice p,
+#content .notice li
+{
+	color:#000;
+}
+#content .errors p,
+#content .notice p
+{
+	font-weight:bold;
+}
+#content .notice
+{
+	background:#ffffcc;
+	border:2px solid #cccc99;
+}
+
+
+.highlight
+{
+	background:#ffea00;
+	text-shadow:0px 1px 0px #fff;
+}
+#header
+{
+	background:url('../images/header.bg.png') repeat-x;/*used in congratulions.html.php*/
+	height:164px;
+}
+#header h1
+{
+	padding-top:5px;
+}
+#header h1 a
+{
+	background:url('../images/header.jpg') no-repeat;/*used in congratulions.html.php*/
+	width:928px;
+	height:140px;
+	display:block;
+	text-indent:-9999px;
+	text-align:center;
+}
+#footer
+{
+	padding:20px 0px 20px 0px;
+}
+#footer .info
+{
+	text-align:center;
+	font-size:11px;
+	color:#666;
+}
+.container
+{
+	width:960px;
+	margin:0px auto;
+}
+#content
+{
+	padding:15px 0px 0px 0px;
+	background:url('../images/content.bg.png') no-repeat;/*used in congratulions.html.php*/
+	margin:0px auto;
+	width:960px;
+}
+#content .container
+{
+	padding:0px 30px;
+	width:auto;
+}
+#content p
+{
+	text-indent:20px;
+	line-height:22px;
+	padding-bottom:15px;
+}
+
+
+
+.blue-box
+{
+	background:#b9e0fe url('../images/blue-box.png') repeat-x;/*used in congratulions.html.php*/
+	padding:10px;
+	width:700px;
+	margin:0px auto 20px auto;
+}
+.cream-box
+{
+	background:#fefdf1;
+	padding:15px;
+}
+.blue-box h1
+{
+	color:#0590ff;
+}
+.blue-box h1,
+.blue-box h2,
+.blue-box h3
+{
+	text-align:center;
+	padding:10px 0px;
+}
+.blue-box h1
+{
+	padding:0px;
+}
+
+
+ul.red-discs,
+ul.green-discs
+{
+	margin-left:20px;
+}
+ul.red-discs li,
+ul.green-discs li
+{
+	background:url('../images/li.red.png') no-repeat 0px 13px;/*used in congratulions.html.php*/
+	padding:9px 0px 9px 18px;
+}
+ul.green-discs li
+{
+	background-image:url('../images/li.green.png');/*used in congratulions.html.php*/
+}
+
+
+ul.normal-list
+{
+	margin-left:20px;
+}
+ul.normal-list li
+{
+	list-style-type:disc;
+	padding:9px 0px 9px 18px;
+}
+
+
+
+
+#sidebar
+{
+	float:right;
+	width:290px;
+	background:#fff2f2;
+	border:1px solid #79000d;
+	margin:0px 0px 0px 20px;
+}
+#sidebar .testimonial
+{
+	padding:15px 20px 0px 20px;
+}
+#sidebar .testimonial h4
+{
+	font-size:24px;
+	font-weight:normal;
+	line-height:30px;
+	padding:0px 0px 0px 0px;
+}
+#sidebar .testimonial p
+{
+	text-indent:0px;
+	font-size:12px;
+}
+#sidebar .testimonial img.fright
+{
+	margin:5px 0px 10px 10px;
+}
+
+
+
+
+.earnings,
+#who-the-heck
+{
+	width:440px;
+}
+
+
+.earnings table
+{
+	border-collapse:collapse;
+}
+.earnings table tr th,
+.earnings table tr td
+{
+	padding:20px 10px;
+	text-align:center;
+	font-weight:normal;
+	background:#fffeed;
+	border:1px solid #fff;
+	text-shadow:0px 1px 1px #fff;
+}
+.earnings table tr th,
+.earnings table tr td.col1
+{
+	background:#ffa23d;
+}
+.earnings table tr td.alt
+{
+	background:#f2f2f1;
+}
+
+
+
+#who-the-heck
+{
+	background:#ebebeb;
+	border:1px solid #ccc;
+}
+#who-the-heck h3
+{
+	background:#cf0100;
+	text-align:center;
+	color:#fff;
+	text-shadow:1px 1px 1px #9c0808;
+	padding:20px 0px 20px 0px;
+	font-size:24px;
+}
+#who-the-heck h3 span
+{
+	font-weight:normal;
+	font-size:18px;
+}
+#who-the-heck p
+{
+	padding:15px 20px 0px 20px;
+	text-indent:0px;
+	font-size:11px;
+	line-height:16px;
+}
+
+
+.white-box
+{
+	border:1px solid #939393;
+}
+.white-box h3
+{
+	background:#ff7502 url('../images/orange-fade.png') repeat-x; /*used in congratulions.html.php*/
+	border-bottom:1px solid #939393;
+	text-align:center;
+	font-size:18px;
+	padding:8px 0px;
+	color:#fff;
+	text-shadow:1px 1px 1px #944706;
+}
+
+
+#risk-free-enroll
+{
+	width:739px;
+	margin:0px auto;
+}
+.yellow-box
+{
+	background:#fcfdd9;
+	border:1px solid #000;
+}
+#risk-free-enroll p
+{
+	text-indent:0px;
+	padding:15px 20px 0px 20px;
+}
+
+p.bluelink a
+{
+	color:blue;
+	font-family:"Times New Roman";
+	font-size:25px;
+	font-weight:normal;
+}
+p.timesnewroman
+{
+	font-family:"Times New Roman";	
+}
+
+
+#checker
+{
+	border:2px solid #ccc;
+	padding:15px;
+	width:450px;
+	margin:0px auto 15px auto;
+}
+#checker h3
+{
+	padding:0px;
+}
+
+
+
+
+
+
+
+
+#discount-bar
+{
+	background:#fff;
+	width:100%;
+	margin:0px auto 0px auto;
+}
+#discount-bar p
+{
+	color:red;
+	text-align:center;
+	font-size:25px;
+	font-weight:bold;
+	padding:10px 0px;
+}
+#discount-bar p a
+{
+	color:red;
+	text-decoration:none;
+}
+#footer div.disclaimer  p{
+	color:					#666;
+	font-size:				11px;
+	text-align:				left;
+}
+
+

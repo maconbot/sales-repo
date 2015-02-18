@@ -1,0 +1,28 @@
+.cof-field.lr {
+	float: left;
+	margin-right: 5px;
+	}
+.cof-field.lr .cof-field-label.left {
+	margin-right: 5px;
+	}
+.cof-field.lr .cof-field-label.right {
+	margin-left: 5px;
+	}
+.cof-field-label.left {
+	float: left;
+	clear: right;
+	line-height: 20px;
+	height: 20px;	
+	}
+.cof-field-input.left {
+	float: right;	
+	}
+.cof-field-label.right {
+	float: right;
+	clear: left;	
+	line-height: 20px;
+	height: 20px;
+	}
+.cof-field-input.right {
+	float: left;	
+	}

@@ -1,0 +1,978 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0064)https://excelfromhome.com/default.cfm?qualify=yes -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+    	<title>Excel From Home</title>
+	<link rel="shortcut icon" href="https://www.home-internet-careers.com/images/favicon2.ico" type="image/x-icon">
+	<link rel="stylesheet" href="./qualify_files/reset.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="./qualify_files/qualifystyle.css" type="text/css" media="screen">
+	<link rel="stylesheet" type="text/css" href="./qualify_files/stylesmop.css">
+	<script type="text/javascript" src="./qualify_files/popup.js"></script>
+	<script type="text/javascript" src="./qualify_files/afn.js"></script><!--[if IE 6]><script type="text/javascript" src="/js/DD_belatedPNG_0.0.8a.js"></script><![endif]-->
+ 	
+	
+	<link type="text/css" href="./qualify_files/jquery-ui.css" rel="Stylesheet">
+	<script type="text/javascript" src="./qualify_files/jquery.min.js"></script>
+	<script type="text/javascript" src="./qualify_files/jquery-ui.min.js"></script>
+	<script type="text/javascript">var dep = false;</script>
+	<script src="./qualify_files/flowplayer-3.1.4.min.js"></script>
+	
+
+	
+	
+	
+	
+    	<script type="text/javascript">
+			
+			window.StayLink="order_today.html?ds=1";
+			window.AlertBoxRegEx=window.AlertBoxRegEx||[{Expression:/\n\n/g,Replacement:"\n"},{Expression:/\*{3,3}([^\*]+?)\*{3,3}/g,Replacement:"<b style=\"font-weight:bold;\">$1</b>"}];
+			
+			window.StayMessage="";
+			window.StayMessage+="*** Congratulations! You've just qualified for my FRIENDS AND FAMILY DISCOUNT! ***\n";
+			window.StayMessage+="\n";
+			window.StayMessage+="Click the \"Stay on Page\" button below to receive an additional $20 OFF!\n";
+			window.StayMessage+="\n";
+			window.StayMessage+="*** Your Purchase is 100% RISK-FREE! ***\n";
+			window.StayMessage+="\n";
+			window.StayMessage+="With My Make-Money-Or-It's-Free GUARANTEE, You've Got Nothing to Lose!\n";
+			
+			//window.StayMessage="";
+			//window.StayMessage+="\n";
+			//window.StayMessage+="**Special - $20.00 Activation Discount**\n";
+			//window.StayMessage+="\n";
+			//window.StayMessage+="Click the \"Stay on Page\" button to view this offer!\n";
+			
+
+			window.AlertBoxOverlayBackground="rgba(0,0,0,0.5);";
+		</script>
+		
+	<script src="./qualify_files/popper7.js" type="text/javascript"></script>
+	
+	
+	
+	
+	<script type="text/javascript">
+function calculateEarnings(){ 
+	document.getElementById('daily_result').innerHTML = "$" + (document.getElementById('numlinks').value * document.getElementById('linksum').value);
+	document.getElementById('weekly_result').innerHTML = "$" + (1 * document.getElementById('numlinks').value * document.getElementById('linksum').value * document.getElementById('daysperweek').value);
+	document.getElementById('monthly_result').innerHTML = "$" + (4 * document.getElementById('numlinks').value * document.getElementById('linksum').value * document.getElementById('daysperweek').value);
+	document.getElementById('yearly_result').innerHTML = "$" + (52 * document.getElementById('numlinks').value * document.getElementById('linksum').value * document.getElementById('daysperweek').value);
+}
+var msg = '5';
+var colorTimer = null;
+function toHex(n) {
+	var hexChars = '0123456789ABC';
+	if (n == 0) return n;
+	var j, k;
+	var temp = '';
+	while (n != 0) {
+		j = n % 16;
+		n = (n - j)/16;
+		temp = hexChars.charAt(j) + temp;
+	}
+	return temp;
+	}
+	function colorize() {
+		if (!document.getElementById) return;
+		for (i=0; i<msg.length; i++) {
+			k = Math.round(Math.random() * 16777215);
+			k = toHex(k);
+			while (k.length < 6){
+			k = k + '0';
+		}
+		document.getElementById("colrot").style.color = '#' + k;
+	}
+	colorTimer = window.setTimeout('colorize()', 200);
+}
+</script>
+	
+<style>
+body {
+		background: #fff url('/images/topmainBg.jpg') repeat-x;
+		width: 100%;
+		display: table;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	header, footer {
+		width: 1020px;
+		clear: both;
+		margin: 0 auto;
+		position: relative;
+	}
+	header {
+		height: 159px;
+		border: none;
+	}
+	header h1 {
+		font: bold 14px/16px Arial, Helvetica, sans-serif;
+		color: #ffffff;
+		text-align: center;
+		position: absolute;
+		top: 40px;
+		right: 60px;
+		width: 515px;
+	}
+	header .mediaIconsUS {
+		background: url('/images/as-seen-in-us.png') no-repeat;
+		background-size:380px 64px;
+		width: 365px;
+		height: 90px;
+		border: none;
+		border: 0px solid white;
+		position: absolute;
+		top: 50px;
+		right: 0px;
+	}
+    .style1 {font-size: 24px}
+    .style2 {color: red;font-size: 24px;}
+    .style3 {font-size: 14px}
+    .style9 {font-size: 120%}
+  	.blue-box
+    {
+	    background:#b9e0fe url('images/orange-box.png') repeat-x;
+	    padding:10px;
+	    width:700px;
+	    margin:0px auto 20px auto;
+    }
+    ul.red-discs li,
+    ul.green-discs li
+    {
+	    background:url('images/li.red.png') no-repeat 0px 13px;
+	    padding:9px 0px 9px 18px;
+    }
+    ul.green-discs li
+    {
+	    background-image:url('images/li.green.png');
+    }
+    .white-box h3
+    {
+	    background:#ff7502 url('images/orange-fade.gif') repeat-x;
+	    border-bottom:1px solid #939393;
+	    text-align:center;
+	    font-size:18px;
+	    padding:8px 0px;
+	    color:#fff;
+	    text-shadow:1px 1px 1px #944706;
+    }
+   </style>
+   
+   <style>
+	header .headerLogo {
+		
+		background: url('/images/Home Internet Careerslogo3.png') no-repeat;
+		
+		width: 430px;
+		height: 130px;
+		border: 0px solid white;
+		position: absolute;
+		top: 0px;
+		left: -20px;
+	}
+	</style>
+
+</head>
+<body id="page-17994" class="landing-body" onload="calculateEarnings(); colorize();">
+	<header>
+		<figure class="headerLogo"><i></i></figure>
+			<h1 class="asSeenOn" style="margin-top:0px;margin-right:-95px;">Work From Home Opportunities Have Been Featured On:</h1>
+		<figure class="mediaIconsUS"><i></i></figure>
+	</header>
+	
+	
+	<div class="container">
+		<div class="blue-box" style="margin-top:30px;">
+			<div class="cream-box">
+				<h1>Congratulations !</h1>
+				<h2>There is Currently <span id="colrot" style="color: rgb(88, 96, 64); text-decoration: underline; font-size: 30px;">9</span> Positions Left In Your Area.</h2>
+				<h3>Read The Job Report Below To See If You Quality</h3>
+			</div>
+		</div>
+			<h3 class="center">Special Report from Kelly Scott:</h3>
+				
+
+				
+				
+				
+					<h1 class="center">If You Can Spare 60 Minutes A Day, We Can Offer<br> You A Certified, Proven And Guaranteed Home<br> Job To Make Up To $379/Day From Home!</h1>
+				
+				
+				
+				
+				
+				
+			<p class="center bold"><span class="highlight">"Important: Read my full report now as only 15 people are accepted into this program per
+			city at any given time... because of the personal support given to each new member to ensure everyone's quick financial success. Don't
+			hesitate... this page is taken down (literally) when the limit is reached, so read on...</span></p>
+
+			<h3 style="padding-left: 50px; text-align: center;"><span class="red">URGENT UPDATE:</span> Recently this work at home opportunity
+			 has received <br> a lot of national media attention. All positions for this program  are filling up quickly. To secure a position
+			 you must act now! See below for details...</h3>
+
+			
+     
+
+			
+				
+					<div align="center" style="margin-top:20px;margin-bottom:50px;">
+						<a href="https://excelfromhome.com/video/ptp.flv" style="display:block;width:400px;height:274px;border: 6px solid gray;" id="player"><object width="100%" height="100%" id="player_api" data="https://excelfromhome.com/video/flowplayer-3.1.5.swf" type="application/x-shockwave-flash"><param name="allowfullscreen" value="true"><param name="allowscriptaccess" value="always"><param name="quality" value="high"><param name="cachebusting" value="false"><param name="wmode" value="opaque"><param name="bgcolor" value="#000000"><param name="flashvars" value="config={&quot;clip&quot;:{&quot;autoPlay&quot;:true,&quot;url&quot;:&quot;video/ptp.flv&quot;},&quot;playerId&quot;:&quot;player&quot;,&quot;playlist&quot;:[{&quot;autoPlay&quot;:true,&quot;url&quot;:&quot;video/ptp.flv&quot;}]}"></object></a>
+						<script language="JavaScript"> flowplayer("player", {src: "video/flowplayer-3.1.5.swf", wmode: 'opaque'},{clip:{autoPlay:true}});</script>
+					</div>
+				
+			
+
+		
+		<div id="sidebar">
+			<a><img src="./qualify_files/people-saying.jpg"></a>
+	
+		<div class="testimonial">
+    		
+    		<a><img class="fright" src="./qualify_files/mom_kids.jpg" style=" width: 135px;"></a>
+    		<p>"As a stay-at-home mom with two young children I was looking for a way to make money from home. I enrolled in this Program and found that the resources were critical to being successful. People will make attempts to start online businesses themselves, and that's great, but I think that the ones you'll find that are more successful really have the right tools behind them. Currently, I'm doing about $40,000 in sales a month. So things are going really well. Monthly profit is coming in at about $10,000 currently. Thanks!"</p>
+			<p>--Kimberly T.B., Chandler, AZ</p>
+    	</div>
+
+    	<div class="testimonial">
+    		
+    		<a><img src="./qualify_files/t_005.jpg" "="" class="fright"></a>
+    		<p>"Since I signed up, I have made a profit of $1,147.02 by following the instructions in this program. I believe this is going to be a very profitable adventure, Thanks to this program."</p>
+			<p>--Wesley R., Stevenson Ranch, CA</p>
+    	</div>
+
+    	<div class="testimonial">
+    		
+    		<a><img src="./qualify_files/single-black-woman.jpg" style="width: 135px;" class="fright"></a>
+    		<p>"If there is anyone out there debating if you should do this or not, or if you could do this or not, the answer is, you could and you should! For the first time in my life, I AM SO PROUD OF MYSELF!!! and so is my family! That's the best part of it all! Forever Grateful and Thankful!!!"</p>
+			<p>--Veronica R., Mastic Beach, NY</p>
+    	</div>
+
+    	<div class="testimonial">
+    		
+    		<a><img src="./qualify_files/t_003.jpg" class="fright"></a>
+    		<p>"If you're thinking about getting involved with this program, don't hesitate any longer, get on board and lets all succeed together. Watch, Listen, Learn &amp; Do... That's what I keep telling myself over and over again, and I can't wait to see where this will take me in the future. Thank You!!!"</p>
+			<p>--Gil S. Coeur D' Alene, ID</p>
+    	</div>
+
+    	<div class="testimonial">
+    		
+    		<a><img src="./qualify_files/t_002.jpg" class="fright"></a>
+    		<p>"I have really seen major results with minor changes.  I have been selling books on Half.com for a while and only sold 1 or 2 a month. Using the listing techniques taught to me by this program, I've sold more books on eBay and Half.com in the first month than I did all last year. I'm now working towards setting up my own website and also selling other products online. Thanks for the boost.	</p>
+			<p>--Russell V., Apple Valley, MN</p>
+    	</div>
+
+    	<div class="testimonial">
+    		
+    		<a><img src="./qualify_files/working_man.jpg" style="    width: 132px;" class="fright"></a>
+    		<p>"I really appreciate what this program is doing for me. I watched a few webinars and took some tips on eBay and then took some of my old stuff and sold it.  Wow, I made $356 dollars in a week and I just spent about 5 hours doing it. Thank you!"</p>
+			<p>--Kenny T., Artesia, NM
+    		</p>
+    	</div>
+
+    	<div class="testimonial">
+    		<!--<h4><small>'</small> This is truly Incredible!</h4>-->
+    		<a><img src="./qualify_files/t_006.jpg" class="fright"></a>
+    		<p>"Hi this is Elias wishing you a very happy holiday to you and your family. I got an early Christmas gift from eBay. I am now an eBay Power Seller thanks to you. Without you I could not have done it."</p>
+			<p>--Elias M., Chicago, IL</p>
+    	</div>
+
+    	
+	
+		<div class="center" style="margin-top:20px;margin-bottom:40px;"><a><img src="./qualify_files/spartners.jpg"></a></div>
+	</div>
+
+
+		<p class="bold style3" style="padding-top: 5px;">Dear Friend,</p>
+
+		<p class="style3">If I could show you an <span class="highlight">easy proven and guaranteed</span> way to make $ 379 a day and more, working
+		part-time from the comfort of your home... Would you be interested? </p>
+		
+		<span class="style3"><a><img src="./qualify_files/ladykg.jpg" class="fright" width="300" style="margin-left: 20px;"></a></span>
+		<p class="style3">YES! Then <strong>this will be the most exciting message that you will ever read. </strong></p>
+		<p class="style3">And here's why:</p>
+		
+		<p class="style3">My name is Kelly Scott, and let me tell you, I used to work hard... Really hard... And like millions of other Americans... While
+		hardly getting by, living from pay check to pay check.</p>
+		<p class="style3">I got divorced at a very young age and&nbsp;I was left with having to find a new place to live with my 6 year old daughter. I moved
+		to New Jersey for a fresh start on life which&nbsp;was not easy. I had to work two jobs waitressing and some freelance work on the side just to pay bills.</p>
+		<p class="style3"> No matter how hard I worked my bank balance was always at zero at the end of each month, and my credit cards kept accumulating more
+		and more debt. I hated my jobs, my bosses and&nbsp;the debt.</p>
+		<h3 class="red center style1"><img src="./qualify_files/text1.gif" alt="" width="494" height="131"></h3>
+		<p class="style3">I remember the exact day: It was June 17th, and I got laid off from my full time job, the one that was paying the majority of bills.
+		It was a few days before my little girl's birthday and I was supposed to buy Amanda the birthday presents she had been hoping for. But all of a sudden,
+		I could no longer afford gifts. I didn't even know how&nbsp;I could get enough money together to pay the rent,&nbsp;let alone the food for us.</p>
+		<p class="style3">I remember crying for hours that day. I didn't know what I was going to do to pick myself up, it felt like the end and if it wasn't for
+		my daughter I do not know how I would have had the energy to fight and go on. I knew I had to do something and quick before we were homeless and
+		living out on the streets. I needed another income immediately, something very quick. And I was thinking about it, I asked myself: Before I make a
+		sudden move that will tie me into another job&nbsp;that I will hate, why don't I consider what it is I want... and do not want... in a job?<br>
+		</p>
+
+		<p class="nopad style3">So first, I began thinking about what I DON'T want in a job...</p>
+		<ul class="red-discs">
+			<li class="style3"><span class="highlight">I do not want a boss</span></li>
+			<li class="style3">I do not want to be on anyone else's time</li>
+			<li class="style3"><span class="highlight">I do not want to have to wake up so early anymore, especially to that loud alarm clock.</span></li>
+			<li class="style3">I do not want to commute anymore and sit for hours ... frustrated ... in traffic</li>
+			<li class="style3">I do not want to go&nbsp;and work in&nbsp;an office.</li>
+			<li class="style3">I do not want to be part of a business of any kind either, with troubles like a storefront, investment, inventory, employees,
+  			extensive record-keeping, or having to sell products to anybody.</li>
+			<li><span class="highlight style3">And I do not want anything that requires special training, education, or skills, because I do not have any and
+			I don't have the time or finances to get any right now.</span></li>
+	    </ul>
+
+		<p align="center"><img src="./qualify_files/text2.gif" alt="" width="494" height="116"></p>
+		<ul class="green-discs">
+			<li class="style3">I want to work from home or anywhere else I choose. I want a job that will give me the free time I desire to spend with my
+			daughter who has suffered from our situation the past few years.</li>
+			<li class="style3"><span class="highlight">I want an income that will give me and my daughter more then we need to pay the bills and reward
+			us with a few treats now and again.</span>&nbsp;</li>
+			<li class="style3">I want to take time off whenever I want and I want to have plenty of time for other people&nbsp;including myself and my hobbies.</li>
+			<li class="style3">I want something that will be reasonably easy.</li>
+			<li class="style3">I want a job that I will enjoy 100% of the time.</li>
+			<li class="style3"><span class="highlight">   I want to only work a few hours a day, whenever I choose.</span></li>
+			<li class="style3">And I want, or need to start making money immediately.</li>
+		</ul>
+		
+		<p class="style3">And do you know what... to my surprise two weeks after this terrible day...</p>
+		<h3 class="red style1" align="center"><img src="./qualify_files/text3.gif" alt="" width="494" height="120"></h3>
+		<p class="style3"> And here is how it happened:</p>
+		<p class="style3">After thinking it over, I began expressing to people the type of job, I wanted. Most people did not take me very seriously.
+		I myself did not know if something like this really did exist. But I did make the conscious decision to keep my eyes open for it. And just two
+		weeks later, while in my doctor's office I met a man who was working from home, part time, and had been&nbsp;for a few years. He told me his work
+		from home job give him all the things I had described, and urged me to try it out.<br></p>
+		<p><span class="style3">So I did... and... it turned to be the best decision of my life!</span><br></p>
+		<p><span class="style3">Within three months I quit my other job and ceased working freelance. I now had an easy work at home job, where I work
+		1-4 hours a day, making&nbsp;me&nbsp;DOUBLE (and soon much more) than I was earning before. I no longer had a boss, I worked as a little
+		or as much as I wanted, I began paying off my debt, and I watched both my life and my daughters&nbsp;completely turn around.</span><br></p>
+
+		<div class="center"><a><img src="./qualify_files/amex.jpg"></a></div>
+
+		<p class="style3">Fast forward to today and I am now a millionaire from working at home. I live in my dream house, buy all the things I want,
+		do what I want, take vacations around the world, and I'm able to give my daughter the life I have always wanted to.<br></p>
+		<p class="style3"><span class="highlight">I have no financial worries anymore and, I feel so secure, free and happy... It is the ultimate high
+		in the world, a feeling hard to explain.</span><br></p>
+		<p class="bold style3">My life turned around so fast... That I soon began sharing my story with others. And since then, I have helped thousands
+		of other people achieve their financial dreams and goals working at home.<br></p>
+		<p class="style3">You may be familiar with me from the one day work at home seminars I used to&nbsp;present in Los Angeles. Others know me
+		from the numerous interviews, podcasts and teleseminars that I have done in the past. And there are so many people coming to me today for help
+		and advice on getting started working from home that I've been called the number 1 work at home consultant in the whole of America.<br></p>
+		<p class="style3"><span class="highlight bold">And right here, right now, I am going to tell you everything you need to know about making the
+		money of your dreams from home starting today!</span> I'm going to tell you about the best opportunity I have ever discovered... A&nbsp;legitimate,
+		proven, and easy work at home job opportunity that can make your financial dreams come true, as it did for me and has done for thousands of other
+		people worldwide!</p>
+		
+		<h3 class="red center style1"><img src="./qualify_files/text4.gif" alt="" width="494" height="159"></h3>
+		<p class="style3">Did you know it's now estimated that more than 24 million people are working from home? That is a&nbsp;huge amount&nbsp;of people
+		and every year more and more people are fleeing the rat race to work from home.<br></p>
+		<p class="style3">So why the boom in people working at home?<br></p>
+		<p class="style3"><strong>Because it is now easier and more realistic&nbsp;than ever before in history to make a remarkable income from the
+		comfort of your own&nbsp;home!</strong> The Internet spawned new jobs that could easily be done from home with nothing more than a computer with
+		Internet access. And many companies, large and small, are realizing they could have people working from their homes, thereby saving them large amounts
+		of money on office space and other employee expenses.<br></p>
+		<p class="style3">And though many people still do not know about this yet, one of the most in demand work at home opportunities is internet
+		link posting - posting links on the internet.<br></p>
+		<p class="style3"><span class="highlight bold">So, let me tell you about it:</span><br></p>
+		<p class="style3"><strong>You've probably seen links offered for many products you've purchased before.</strong> For example, imagine you were on
+		the Internet and saw a link for a cell phone that you liked for $125. You may click the link and make a purchase or visit the company website
+		to learn more and possibly even make a purchase.<br></p>
+		<p class="style3">Do you know why the link is there?<br></p>
+		<p class="style3">Because it makes you more willing to buy the cell phone! Sure, the company makes less money because of the cost of placing the
+		link on that specific website but, many more people will buy the phone as a result of putting the product out there in front of thousands of people
+		to view. And the increase in sales more than makes up for the special price of $125... So... The company ends up profiting A LOT more because of
+		the sheer volume. In fact many companies often see a 10-20% increase in sales by offering affiliate links. And 10% to 20% of millions and billions
+		of dollars is a lot of money!<br></p>
+		<p class="style3"><strong>It's no wonder tens of thousands of companies in the United States are offering links for their products.</strong> Both
+		small businesses and large corporations do this. And here's where the massive money-making opportunity knocks on your door because of it...</p>
+		<h3 class="style2" align="center"><img src="./qualify_files/text6.gif" alt="" width="780" height="143"></h3>
+		<p class="style3"><span class="highlight bold">You see, there are millions of links posted by home business owners every year, and companies need
+		tons of people to process them!</span> Companies do not post links themselves. They would have to buy new buildings and hire and house&nbsp;thousands
+		&nbsp;of new employees to do that.<br></p>
+		<p class="style3"><strong>Instead, they know anyone of any age and background can do this from home with no over head because it is&nbsp;so
+		simple and easy, and anyone can learn to do it themselves in an afternoon and begin immediately with no training.</strong> And it can be done from
+		anywhere. Therefore, companies obviously much prefer to have people posting the links, independently, from their own home.<br></p>
+		<p class="style3">And even though it is so simple and easy (I will show you the three easy steps to post a link shortly) ...And can be done from
+		home... The money is&nbsp;still&nbsp;great because of the huge volume that can be created from just one link!<br></p>
+		<p class="style3"> Put it this way: To post one link takes between 3 to 4 minutes. To be conservative, let's say it takes 4 minutes. Well, if you
+		post one link every 4 minutes, and you do that for 60 minutes, that amounts to 15 links in just 60 minutes. And the average amount you make per
+		link posted is $15.<br></p>
+		<p class="bold style3">Let's do the math: 15 links for $15 each equals $225. That's $225 for 60 minutes of work! If you do this five days a
+		week, you can make $1,125 a week... $4,500 a month... and $58,500 a year! And that's just 1 hour a day, I do at least 3 hours per day Monday to
+		Friday keeping the weekends to myself.<br></p>
+		<p class="style3"><span class="highlight">And you can work as little or as much as you want!</span> It doesn't matter. I personally now work about
+		4 hours a day, and that's because I really enjoy it and I like to make a very big income so I can go overboard with providing for my family. It all
+		depends on how much money you want to make.<br></p>
+		<p class="style3">Here's an illustration of how much money you can make in just a few different scenarios:</p>
+
+		
+		
+		<style>
+		.line14 {
+background:transparent url(/images/calcbg.png) no-repeat scroll 0 0;
+display:block;
+height:380px;
+width:796px;
+margin:0 auto;
+padding:50px 0 15px;
+}
+.line15 {
+display:block;
+height:28px;
+width:735px;
+margin:0 auto;
+}
+.line16 {
+display:block;
+height:auto;
+line-height:35px;
+width:730px;
+margin:0 auto;
+}
+.line16 ul {
+display:block;
+list-style:none outside none;
+margin:0 0 0 13px;
+padding:0;
+}
+.line16 li {
+background:url(/images/calcli.jpg) no-repeat scroll 0 11px transparent;
+display:block;
+font-size:16px;
+padding-left:30px;
+}
+.line16-lft {
+display:block;
+float:left;
+line-height:35px;
+}
+.line16-rght {
+display:block;
+float:right;
+margin:7px 10px 0 0;
+line-height:16px;
+}
+select.cus {
+border:1px solid #06acef;
+width:55px;
+line-height:16px;
+}
+.line17 {
+background:url(/images/btn1.png) no-repeat scroll 0 0 transparent;
+border:0 none;
+cursor:pointer;
+display:block;
+height:71px;
+text-align:center;
+width:458px;
+margin:47px 0 0 380px;
+}
+.line18 {
+margin:40px auto 0;
+width:605px;
+}
+.line18 ul {
+list-style:none outside none;
+margin:0;
+padding:0;
+}
+.line18 li {
+color:#ff3a3d;
+display:block;
+font-weight:700;
+}
+.highlightcaptionitalics {
+font-style:italic;
+}
+.highlightcaptionunderlined {
+text-decoration:underline;
+}
+.highlightcaptionred {
+color:#FF3A3D;
+}
+		
+		</style>
+		
+		  <!-- calculator app-->
+              <div class="line14"><span class="line15">&nbsp;</span>
+                <div class="clear"></div>
+                <div class="line16">
+                  <form method="post" name="test">
+                    <ul>
+                      <li> <span class="line16-lft">How many links will you post a day?</span>
+                        <div class="line16-rght">
+                          <select class="cus hasCustomSelect" id="numlinks" style="width: 57px; position: absolute; height: 22px; font-size: 16px;">
+                            <option value="5">5</option>
+                            <option value="10">10</option>
+                            <option selected="selected" value="15">15</option>
+                            <option value="25">25</option>
+                            <option value="35">35</option>
+                          </select>
+                          <span class="customSelect cus" style="display: inline-block;"><span class="customSelectInner" style="width: 53px; display: inline-block;">15</span></span></div>
+                        <div class="clear"></div>
+                      </li>
+                      <div class="clear"></div>
+                      <li> <span class="line16-lft">Average money earned for each Link?</span>
+                        <div class="line16-rght">
+                          <select class="cus hasCustomSelect" id="linksum" style="width: 57px; position: absolute; height: 22px; font-size: 16px;">
+                            <option value="10">$10</option>
+                            <option selected="selected" value="20">$20</option>
+                            <option value="25">$25</option>
+                            <option value="30">$30</option>
+                          </select>
+                          <span class="customSelect cus" style="display: inline-block;"><span class="customSelectInner" style="width: 53px; display: inline-block;">$20</span></span></div>
+                        <div class="clear"></div>
+                      </li>
+                      <div class="clear"></div>
+                      <li> <span class="line16-lft">How many days a week will you work?</span>
+                        <div class="line16-rght">
+                          <select class="cus hasCustomSelect" id="daysperweek" style="width: 57px; position: absolute; height: 22px; font-size: 16px;">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option selected="selected" value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                          </select>
+                          <span class="customSelect cus" style="display: inline-block;"><span class="customSelectInner" style="width: 53px; display: inline-block;">5</span></span></div>
+                        <div class="clear"></div>
+                      </li>
+                      <div class="clear"></div>
+                    </ul>
+                  </form>
+                </div>
+                <div class="clear"></div>
+                <div class="line18">
+                  <ul style="float: left;">
+                    <li>Daily Income: <span id="daily_result">$300</span></li>
+                    <li>Weekly Income: <span id="weekly_result">$1500</span></li>
+                  </ul>
+                  <ul style="float: right; margin-right: 100px;">
+                    <li>Monthly Income: <span id="monthly_result">$6000</span></li>
+                    <li>Yearly Income: <span id="yearly_result">$78000</span></li>
+                  </ul>
+                  <div class="clear"></div>
+                </div>
+                <span>
+                <button class="line17" id="calculate" onclick="calculateEarnings();"></button>
+                </span></div>
+              <div class="clear" style="height: 15px;">&nbsp;</div>
+			  
+			  
+			  
+			  
+
+		<p class="style3">As you can see, you can make a part-time income with this or a full-time income with it. The choice&nbsp;is up to you. The above
+		are just a few examples. You can do less and you can do more. And I got to tell you, people are often shocked the first time I show them the amount
+		of money to be made positing links from home. It is really remarkable... And there are three main reasons posting links is so profitable:<br></p>
+		<p class="style3"><span class="highlight bold">Reason #1:</span> Companies are desperate for more people to post links from home. When demand
+		surpasses supply, wages are high. It's the economic Law of Supply and Demand working in our favor... and... there's an insatiable demand for this job!<br></p>
+		<p class="style3"><span class="highlight bold">Reason #2:</span> If companies were to
+ 		hire employees to do this job, they would need to spend a new fortune on hiring, buying new office space, management, and all the many expenses
+		that come with it. It would cost them too much and, they would have to pay people small wages to keep this profitable for them. Instead, by having
+		people work independently from home, companies are saving millions of dollars, and they can pass many of these savings onto you.<br></p>
+		<p class="style3"><span class="highlight bold">Reason #3:</span> Companies experience huge increases in sales because of these links. Links make
+		them millions of more dollars every month, but without people to process them, companies can't offer them. So basically, you can make great money
+		because it's worth it for companies to pay you a lot to motivate you to post lots of links. Sure, for you it's a lot of money you're getting
+		paid... but... in these companies' eyes... where millions of dollars are at stake, it's a small investment that reaps them enormously greater
+		financial rewards.<br></p>
+		<p class="style3">To sum it up...for you and me, it's almost like being able to 'ethically' take advantage of all these fortune 500 companies extra
+		money, and to finally be able to get a good piece of it, the easy way!<br></p>
+		<p class="style3">It's amazing how something so simple such as&nbsp;posting links from home made me financially independent.<br></p>
+		<p class="style3">Listen: <span class="highlight bold">I've been posting links for over five years now for many major search engines worldwide...</span>
+		I probably know more about this opportunity than anyone else alive... And have become quite famous as a pioneer of link posting. That's why I've successfully
+		been able to teach thousands of people world-wide how to get into this and realize their financial dreams.<br></p>
+		<p class="style3">In fact, companies have been so happy about me spreading the word that an executive officer of a major corporation one day asked me,
+		"Kelly, why don't you create a certified, comprehensive program for people that would tell them about this opportunity and, show them how to get started
+		right away in a clear step-by-step format?"<br></p>
+		<p class="style3">And so...that's exactly what I did!<br></p>
+		<p class="style3">I've created the industry-wide acclaimed...</p>
+		
+		<h3 class="red center style1"><img src="./qualify_files/text7.gif" alt="" width="780" height="195"></h3>
+
+		
+		
+		<p class="style3"><span class="highlight bold">This is the only certified program in the world for search engine link posting</span>, and over
+		1,000 people world-wide have been certified through this program, now making the money of their dreams by posting links from home... for every type
+		of company you can think of!<br></p>
+		<p class="style3">This program has been raved about by many in the work at home industry, <span class="highlight bold">and has recently been rated the
+		#1 work at home program in America by leading work at home review sites.</span><br></p>
+		<p class="style3">To see why, here are the amazing benefits this program gives you, that enable you to easily and immediately start making the money you
+		need, desire and dream of...<br></p>
+		<p class="style3">First, you receive access to our full training center which will cover everything you need to know, step by step!<br></p>
+		<p class="style3">Plus, <span class="highlight">I help you select the best places to start with</span>, so don't worry about being overwhelmed by the
+		many choices! There are a lot to choose from and I help ensure you pick the best one(s) for you.<br></p>
+		<p class="style3">To do so, you'll get a master <span class="highlight bold">list of the companies that offer the highest pay for posting links.</span>
+		You'll also get constant real time updates of the companies offering the highest pay per link submitted, so you can always be sure of making maximum
+		money in minimum time!<br></p>
+		<p class="style3">And by enrolling in my certification program... <span class="highlight bold">you are GUARANTEED an immediate position.</span><br></p>
+		<p class="style3">Here's something else really great about this program: Even though you're posting links for a reputable company...</p>
+		
+		<h3 class="red center style1"><img src="./qualify_files/text8.gif" alt="" width="780" height="59"></h3>
+		
+		<p class="style3">That's right! <span class="highlight bold">You don't have anyone managing over you or telling you what to do.</span> You have no
+		one to report to. Even though you are posting links for the company, you are not their 'employee.' You are completely independent!<br></p>
+		<p class="style3">Basically, by signing up with a company to post links, you're given 24 hour access, 7 days a week, to links that need posting.
+		<span class="highlight bold">And, you have no working obligations.</span> You can work in the day, afternoon, evening, night, it doesn't matter!
+		You can work at a different time every day. You can work whatever days you want. You have complete control and flexibility over your schedule.</p>
+		<p class="style3" align="center"><img src="./qualify_files/people.jpg" alt="" width="788" height="177"><br></p>
+		<p class="style3" align="left">And as I told you, posting links is very simple and easy! You're given access to your own personal account and all
+		you do is...</p>
+		
+		<h3 class="red center style1"><img src="./qualify_files/text9.gif" alt="" width="780" height="145"></h3>
+	
+		<p class="style3"><span class="highlight bold style9">Easy Step #1:</span> You log into your personal account and you copy the unique linking code
+		the system automatically gives you. Here's an illustration</p>
+		
+		<div class="center"><a><img src="./qualify_files/preview_msahi.jpg" width="400"></a></div>
+			<div class="center"><a><img src="./qualify_files/button_003.png"></a></div>
+
+			<p><span class="highlight bold style9">Easy Step #2:</span> <span class="style3">You enter the section of your personal account where you're
+			given customer records for you to post links for. Customer names are added to your account 24 hours a day so you always have plenty of links
+			to post. Here's an illustration:</span></p>
+
+			<div class="center"><a><img src="./qualify_files/brands.jpg"></a></div>
+
+			<p><span class="highlight bold style9">Easy Step #3:</span> <span class="style3">You fill out a few details and submit to create a site.</span> </p>
+
+			<div class="center"><a><img src="./qualify_files/button2.png"></a></div>
+
+			<p class="style3">That's it! Follow these three easy steps and you're done! To fill out one link took you 1 to 2 minutes and, you just made
+			$15 dollars! Do this over and over again, as much as you want, to make all the money you want!</p>
+			<p class="style3">Process 5 links for $75 a day... 15 links for $225 a day... 30 links for $450 day...or more! To put it another way...</p>
+	 
+	 	<h3 class="red center style1"><img src="./qualify_files/text10.gif" alt="" width="780" height="113"></h3>
+
+			<p class="style3">And the best part is <span class="highlight bold">you can visibly see exactly how much money you're making by clicking into
+			the earnings section of your personal online accounts! Here's a glimpse what they look like:</span></p>
+
+			<div class="center"><a><img src="./qualify_files/amounts.jpg"></a></div>
+
+			<p class="style3">It's like a bank statement showing you your earnings for every link you posted. And it's updated every 30 minutes, so you
+			have a clear real time earnings report!<br></p>
+			<p class="style3">I love clicking on my earning report more than anything in the world and, I check it all throughout the day! It's really
+			motivating to instantly see the money you're making. You don't have to wait to see your pay... you can see it verified anytime you want in
+			your personal account. It's a really amazing, comforting, and uplifting feeling you have to experience for yourself!</p>
+
+		<div class="center"><a><img src="./qualify_files/lifestyle.jpg"></a></div>
+
+		<p>&nbsp;</p>
+		<p class="style3">And even better...</p>
+		<h3 class="red center style1"><img src="./qualify_files/text11.gif" alt="" width="780" height="63"></h3>
+
+		<p class="style3"><span class="highlight bold">Many companies will pay you weekly</span>. You can get your money in all kinds of ways including
+		check by mail, direct deposit, wire transfer and even directly to your Paypal account.<br></p>
+		<p class="style3">These companies are reliable. You get paid on time, every time. You can also login at any time during the day to check your 
+		stats and keep track of how much you have made in real-time. No more worries on late paychecks. <br></p>
+		<p class="style3">And so you now, the personal account you're given is very easy to use. <span class="highlight bold">It was specifically designed so that
+ 		even someone with no computer experience at all could learn to use it in just a few minutes.</span> If you know how to check email, navigating your
+		personal account will be just as easy. You'll get clear step-by-step instructions, and everything is straight-forward, with easy to fill out forms,
+		easy to read text, and big visible buttons.</p>
+
+		<h3 class="red center style1"><img src="./qualify_files/text12.gif" alt="" width="780" height="56"></h3>
+
+		<p class="style3">If you want, there are many companies that allow you to post links offline, so you don't even need a computer! I demonstrated how it's
+		done online simply because that's what most people choose to do these days, but you can post links offline too.<br></p>
+		<p class="style3">Let me tell you something. Come a little closer. Posting links from home is so easy, and the benefits so incredible, I am sure you'll
+		never want to do anything else ever again... but this. Just imagine</p>
+
+		<ul class="normal-list">
+			<li class="style3"><span class="highlight bold">You can work as little or as much as you want, anytime you want!</span></li>
+			<li class="style3">You don't need any special skills, training, or education! You can get started in an afternoon!</li>
+			<li class="style3">You can start to make money immediately! It takes 1-2 minutes to post a link!</li>
+			<li class="style3">You can achieve financial freedom, end your money worries, and live whatever lifestyle you want!</li>
+			<li class="style3">You can have all the time you want for your family, friends, and hobbies!</li>
+			<li class="style3"><span class="highlight">You can take vacations whenever you want! (I also like to take 'working vacations' at
+			exotic locations around the world).</span></li>
+			<li class="style3">You don't have to wake up to an alarm clock anymore!</li>
+			<li class="style3">You can do this part time or full time! (If you currently have a job, you can feel secure by keeping it and
+			doing this part time until your part-time income with this exceeds the income you're currently making).</li>
+			<li class="style3"><span class="highlight bold">You can work from your home or anywhere else you choose to! (I like to either work
+			in my kitchen or living room, and sometimes I work in bed).</span></li>
+			<li class="style3">You don't have to get dressed for work anymore! Work at home and wear whatever you like to wear at home!</li>
+			<li class="bold style3">You don't have to drive anywhere, get frustrated in rush hour traffic, or pay ridiculous gas prices to get
+			to work and back every day! Instead, use all that saved money and time for other enjoyable things in your life!</li>
+			<li class="style3">You won't have a boss hovering over you anymore! You are completely independent and the only person you answer
+			to is yourself. You're the boss now !</li>
+			<li class="bold style3"><span class="highlight">You can rest assured you'll be able to make the money of your dreams for the rest of
+			your life with this!</span> (You don't have a boss so you don't have to worry about getting fired. Demand for this job is extremely
+			high and is projected to remain so for decades to come..</li>
+			<li class="bold style3">You don't have to deal with crappy co-workers or office politics! If you've had to deal with this before, you're
+			going to love the peace of mind you'll have without it.</li>
+			<li class="style3">You can give yourself a pay raise anytime you want! All you do is post more links! And you can post all the links
+			you want, there's no limit!</li>
+		</ul>
+	  
+			<p align="center"><img src="./qualify_files/text13.gif" alt="" width="780" height="117"></p>
+			<p class="style3" align="left"><span class="highlight">This certification program guarantees you an immediate position of your choice
+			as a Search Engine Agent.</span> It takes only a few minutes to sign up with the company you want and, you can do so online without EVER
+			having to talk to anyone in the company! You can also have multiple placements with different companies if you choose.<br></p>
+			<p class="style3">As soon as you sign up on our Wealth Development Center, you're immediately emailed your Welcome Letter with the link to our Wealth
+			Development Center.<br></p>
+			<p class="style3">The Wealth Development Center link will be emailed within five minutes of signing up to get you started immediately. It's very
+			clear, easy-to-read, and walks you through everything in detail,
+			step-by-step. You can read it in an afternoon and...</p>
+      
+	  	<div class="clear">&nbsp;</div>
+
+		<h3 class="red center style1"><img src="./qualify_files/text14.gif" alt="" width="780" height="101"></h3>
+
+		<p class="nopad style3">But that's not all...</p>
+
+		<ul class="normal-list style3">
+			<li class="style3">You'll get lifetime access to the new and constantly updated Wealth Development Center</li>
+			<li class="style3">You'll find out which companies currently offer the highest pay for posting links, and you'll stay up to date with
+			constant real time updates of the companies offering the most pay.</li>
+			<li class="style3">You'll get access to tons of insider tools that will make posting links as easy and fast as it can be.</li>
+			<li class="style3">You'll have instant access to things it took me over 5 years of frontline experience in posting links to discover.</li>
+			<li class="style3">You'll get tons of extra resources that will help you make the money of your dreams.</li>
+			<li class="style3">You'll get complete access to the <strong>Wealth Development Center.</strong>
+			</li><li class="style3">You'll always be updated with the latest information you must know as a Search Engine Agent, as well as new
+			resources and tips we develop and come across.</li>
+		</ul>
+
+		<p class="style3">Plus, by signing up today, you'll get...</p>
+
+	    <h3 class="red center"><img src="./qualify_files/text15.gif" alt="" width="741" height="101"></h3>
+
+		<a><img src="./qualify_files/meeting.jpg" class="fleft" style="margin: 0px 20px 0px 0px;"></a>
+		
+		<p class="style3">I know the huge difference it makes to talk to a real live advisor. <span class="highlight bold">So I've put together
+		a Highly-trained staff of success advisors to give you some guidance.</span> You'll get a free one-on-one phone consultation with a Search
+		Engine Agent Advisor to discuss your individual goals and map out and ensure your quick path to financial success.<br></p>
+		<p class="style3">Even more, <span class="bold">you'll get the email address to a success advisor who you can contact anytime you want
+		with any questions, and you'll get a quick response back with whatever you need.</span> This is a lifetime privilege you receive a member of
+		this certification program.<br></p>
+		<p class="style3">In fact, if you sign up today, I will also give you my personal email address! That's right, my personal email address. So
+		you can email me directly if you wish with any questions or comments. I know it's what I would want if I were you, and that's why I give it to you.<br></p>
+		<p class="style3"><span class="highlight">You see, this certification program is designed to provide you with your dream income from home and, you
+		receive a lot of personal support to ensure your success.</span><br></p>
+		<p class="style3">All this makes it a reality for people to transform their lives by posting links from home.<br></p>
+		<p class="style3">That's why we receive so many remarkable testimonials, a sample of which we've posted throughout this website to
+		share with you. And that's why I'm 100% confident that by registering for this certification program, you'll have a testimonial of your own
+		to share as well.<br></p>
+		<p class="style3">More so, it couldn't be easier to get started because... this certification program is backed by a <strong>100%... 60 Day... 'Make
+		Money Or It's Free' ... Satisfaction Guarantee!</strong></p>
+
+		
+		
+		<style>
+			.hilite {
+    			background: url("images/header03.png") no-repeat scroll 174px top transparent;
+				color: #000000;
+			    font-family: "proxima-nova",sans-serif;
+			    font-size: 40px;
+			    font-style: normal;
+			    font-weight: 700;
+			    line-height: 48px;
+			    padding-bottom: 22px;
+			    text-shadow: 2px 2px 3px #C9C9C9;
+				text-align:center;
+			}
+		</style>
+		
+		 <h2 class="hilite">My Personal Ironclad <br>
+          Satisfaction Guarantee</h2>
+		
+		<p class="style3"><strong>You are guaranteed immediate placement</strong> as a Search Engine Agent by joining this certification program, or you'll get your money back!</p>
+		
+		  <p class="style3">After you sign up, take up to 60 days to try out posting links from home with this program. If you aren't making money and
+		   aren't satisfied, ask for a full refund anytime within 60 days. You'll get your entire fee back immediately. (You can ask for a full refund by phone or
+		   email, full contact details are below). In other words, you make money with this, or it's free. </p>
+		
+		 <p class="style3">Plus, even if you ask for a refund, I want you to keep all the special gifts you're going to receive as a member. I know this
+		   guaranteed program to make money isn't for everybody, so if it's not for you, I understand and want you to accept these free gifts as a token of
+		   my appreciation for giving the program a try.</p>
+		   
+	 	<p class="style3">I make this guarantee to you because I know that by giving this an honest try, you'll make all the money you desire, just like I and
+	      thousands of other people all over the world are doing.</p>
+	     
+		<p><span class="style3">How much does it cost? Well, let's first consider the value of everything you receive when you sign up to the <strong>Search Engine
+		 Agent Program?...</strong></span></p>
+		 
+		<ul class="normal-list">
+			<li class="bold style3">Guaranteed immediate placement! (Value: Priceless)...</li>
+			<li class="bold style3">Access to the Wealth Development Center with dozens of resources, and more added all the time (Value: $997)...</li>
+			<li class="bold style3">The official quick-start guide, How To Make A Fortune posting links From Home (Value: $97)...</li>
+			<li class="bold style3">Your free one-on-one consultation with success advisor (Value: $150)...</li>
+			<li class="bold style3">Free lifetime and unlimited email support by me and your own success advisor (Value: $497)....</li>
+			<li class="bold style3">And a lot more as described earlier (Value: Hundreds of dollars)...</li>
+      	</ul>
+
+		<h3 class="red center style1"><img src="./qualify_files/text17.gif" alt="" width="780" height="107"></h3>
+
+		<p class="style3"><strong>But of course, that is NOT what it costs!</strong><br></p>
+		<p class="style3">With the help of a financial strategist, I have figured out that to cover my costs of offering all this lifetime value and support
+		to you, I can still bring the price down over 75%...to $99.99.<br></p>
+		<p class="style3">However...even though $99.99 is more than worth it compared to the value you get, I know that before I began working at home,
+		$99.99 was a lot of money and, I want to make sure this opportunity is as affordable as possible to give you and anyone else a fair chance to try it out.<br></p>
+		<p class="style3">So I ended up consulting with a few more financial strategists and... I'm happy to tell you I've been able to come up with a way to
+		temporarily give you an insider deal that's just irresistible!<br></p>
+		<p class="style3">You can sign up today for membership into the <strong>Search Engine Agent Program?</strong> for.</p>
+
+		<h3 class="red center style1"><img src="./qualify_files/text18.gif" alt="" width="780" height="105"></h3>
+
+		<p class="style3">That's right, for only <span class="highlight bold">$97.00</span>,
+		you get everything I told you about Sign up today and within five minutes you'll receive your link to The Wealth Development Center, lifetime access to
+		The VIP Members Area... unlimited personal support...and all the other things I've described! You get all this within five minutes so you can start
+		making money right away!<br></p>
+		<p class="style3">And you can have your investment back in just One Day! By posting 15 links in 60 minutes you can make $225, so that means in your first 60
+		minutes you can make back your one-time investment of $97.00, and already be $28 ahead!<br></p>
+		<p class="style3">More so, by posting 15 links in 60 minutes a day...5 days a week...you can put $58,500 year-after-year into your bank account, so the
+		financial value you're receiving is enormous! Think about it, you invest $97.00 once, and you
+		receive back $58,500 over and over again!<br></p>
+		<p class="style3">Furthermore, you're backed by my personal 100% Ironclad, 60 day 'Make Money Or It's Free,' Triple Satisfaction Guarantee. 
+		<span class="highlight bold">This program makes you money or it's free.</span> Period! So you have absolutely nothing to lose by trying it out...rather...you
+		have absolutely everything to gain!<br></p>
+		
+		<p class="style3">All you have to do to get started is click the button below:</p>
+
+		
+		
+		<div class="center" style="margin-top:10px;margin-bottom:10px;"><a href="https://excelfromhome.com/order.html?order=yes" onclick="ShowExitPopup=false;">
+		<img height="68" onmouseout="this.src=&#39;images/btn_a.png&#39;;" onmouseover="this.src=&#39;images/btn_a_hvr.png&#39;;" src="./qualify_files/btn_a.png" width="314"></a></div>
+			  
+			  
+			  
+
+		<h3 class="red center">Please Be Advised:<br> This Special Offer May Expire<br> At Any Time...</h3>
+
+		<p class="style3">I've told you above that I'm able to make this special price available only temporarily. And that's because I am severely limiting
+		membership right now to a limit I and my current staff can handle without incurring any more costs. But to keep providing this certification program,
+		and to expand it to more members, I will soon have to add to the $97.00 fee an additional
+		monthly membership fee of about $29.99, or else raise the one-time fee to about $500.<br></p>
+		<p class="style3">However, if you sign up to become a member today, I'll lock you in at this low one-time investment of $97.00 
+		for life. If I start charging an additional monthly membership fee in the future, it will not apply to you. And if the fee goes up to $500, you'll be happy you
+		saved yourself over $450 by acting today. Your one-time only investment right now grants you full certification and lifetime membership with no ongoing or additional charges, ever.</p>
+
+		
+		
+		<div class="center" style="margin-top:10px;margin-bottom:10px;"><a href="https://excelfromhome.com/order.html?order=yes" onclick="ShowExitPopup=false;">
+		<img height="68" onmouseout="this.src=&#39;images/btn_a.png&#39;;" onmouseover="this.src=&#39;images/btn_a_hvr.png&#39;;" src="./qualify_files/btn_a.png" width="314"></a></div>
+		
+		
+		
+
+		<p class="style3">Also, I and my staff can only handle giving personal support to 115 new members at any given time in this program. That's why if you want
+		to get in, I advise you to sign up now, today, before spots become unavailable again. To see the current availability, here is the latest update:</p>
+
+		
+		
+		<a href="https://excelfromhome.com/order.html?order=yes" target="_top"><p align="center"><img src="./qualify_files/sleft.gif" border="0" style="margin-top:20px;margin-bottom:20px;"></p></a>
+
+		
+
+
+
+		<p class="style3">When all the spots are filled, this webpage is shut down and replaced with the following notice:</p>
+		<p class="style3">'We're sorry, but we cannot accept any new members into our program at this time. Please check back in the future for openings."</p>
+		<p class="style3">Don't let that happen to you. Click below to sign up now before all the spots get filled:</p>
+
+		
+		
+		
+		<div class="center" style="margin-top:10px;margin-bottom:10px;"><a href="https://excelfromhome.com/order.html?order=yes" onclick="ShowExitPopup=false;">
+		<img height="68" onmouseout="this.src=&#39;images/btn_a.png&#39;;" onmouseover="this.src=&#39;images/btn_a_hvr.png&#39;;" src="./qualify_files/btn_a.png" width="314"></a></div>
+		
+		
+
+		<p class="style3">As soon as you click the button to join, you're taken to a Risk-Free Certification Enrollment Form, which will give you access to a secure
+		processing page where you can safely enter your contact and payment information. It's very easy and quick to fill out.<br></p>
+		<p class="style3">As soon as you do that, you'll be emailed within five minutes your Link to the Wealth Development Center... where you will pick out your own
+		username and password to immediately enter the exclusive Excel From Home Members Only area... my email address along with an
+		advisor's email address... and the many other things I've told you about.<br></p>
+		<p class="style3">So don't hesitate. Get started today positing links and making the money you desire from home right away! You'll be forever grateful you
+		did. Click the button below to get started now:</p>
+
+		
+		
+		
+		<div class="center"><a href="https://excelfromhome.com/order.html?order=yes" onclick="ShowExitPopup=false;">
+		<img height="68" onmouseout="this.src=&#39;images/btn_a.png&#39;;" onmouseover="this.src=&#39;images/btn_a_hvr.png&#39;;" src="./qualify_files/btn_a.png" width="314"></a></div>
+		
+		
+
+		<p class="style3">To your financial success,</p>
+		<a><img src="./qualify_files/scott_sig.jpg"></a>
+		<p class="style3">Kelly Scott</p>
+		
+		<div class="center" style="margin-top:10px;margin-bottom:20px;"><a href="https://excelfromhome.com/order.html?order=yes" onclick="ShowExitPopup=false;">
+		<img height="68" onmouseout="this.src=&#39;images/btn_a.png&#39;;" onmouseover="this.src=&#39;images/btn_a_hvr.png&#39;;" src="./qualify_files/btn_a.png" width="314"></a></div>
+
+		<p class="noindent style3"><span class="red">P.S.</span> Remember, with a <span class="highlight bold">60 day 'make money or its free' guarantee,</span>
+		there is nothing you can lose by trying this out... rather... you have financial freedom from home to gain!<br></p>
+		<p class="noindent style3"><span class="red">P.P.S.</span> Sign up (it's risk-free) now, today, before the price goes up or availability closes down.<br></p>
+		<p class="noindent style3"><span class="red">P.P.P.S.</span> If you join today you'll also immediately be sent a special free bonus gift that will open the doors
+		for you to eight other remarkable ways of making money from home! Becoming financially independent could not be any easier and faster than by having this
+		'money bible' in your hands as well. This bonus gift is itself valued at $97, and it's yours today for FREE as a fast-action bonus! Claim it while it's still available:</p>
+
+		
+		
+		
+
+		
+		
+		<div id="riskfree" style="margin-top:40px;">
+		<a href="https://excelfromhome.com/order.html?order=yes"><div class=""><img src="./qualify_files/risk-free-enroll-g.jpg" style="border-radius:7px;" border="0"></div></a>
+		<a href="https://excelfromhome.com/order.html?order=yes" style="text-decoration:none;"><div align="center" style="padding-top:10px;font-size: 20px;"> <img src="./qualify_files/green_arrow.png" border="0" style="vertical-align: middle;">Yes, Kelly, give me access to <span style="color:#245FCC;">The Excel From Home System</span> now!</div></a>
+				
+				<p align="left" style="text-indent: 0;"><span style="font-family:Arial;font-size:16px;line-height:20px;font-weight:normal;">I'm ready to check everything out with absolutely No Risk, thanks to the no questions asked money back guarantee.</span></p>
+				<p align="left" style="text-indent: 0;"><span style="font-family:Arial;font-size:16px;line-height:20px;font-weight:normal;">I know there's no time to lose as spaces in my area are limited. I really appreciate the 60-day 'make money or it's free' guarantee - that allows me to see everything for free if I want, and I'm really excited!</span></p>
+			
+				<a href="https://excelfromhome.com/order.html?order=yes"> 
+				<div align="center"><img src="./qualify_files/guar2abc.home-internet-careers.com.png" border="0" style="margin-top:0px;margin-bottom:0px;"></div>
+				</a>
+				
+				<p align="left" style="text-indent: 0;"><span style="font-family:Arial;font-size:16px;line-height:20px;font-weight:normal;">I can't wait to see my earnings starting to build up before my very eyes!</span></p>
+				<p align="left" style="text-indent: 0;"><span style="font-family:Arial;font-size:16px;line-height:20px;font-weight:normal;">I want to start training with you today and I know that I will gain instant access to your Quick Start program... and... everything I need to succeed on a massive level and potentially generate HUGE profits will be made available to me immediately!</span></p>
+				<p align="left" style="text-indent: 0;"><span style="font-family:Arial;font-size:16px;line-height:20px;font-weight:normal;">On that basis, I'm taking a positive step towards my financial future with my one-time investment today of $97.00 only. Thank you for making this special reduced price available to me today!</span></p>
+				
+				
+				<a href="https://excelfromhome.com/order.html?order=yes">
+				<p></p><center><img src="./qualify_files/getstarted.png" style="margin-top:-30px;" border="0"></center><p></p>
+				</a>
+				
+			<div class="cent" style="color:black;margin-top:-30px;"><b>INSTANT ACCESS<br>Purchase With Credit Card By Secure Server</b></div>
+				<p></p><center><img src="./qualify_files/veri2.png" border="0" style="margin-top:-30px;margin-bottom:5px;border: 0px solid silver;border-radius:0px;"></center><p></p>
+			<div class="cent" style="color:black;margin-top:-30px;font-weight:normal;font-size:14px;">THIS IS A SECURE TRANSACTION. YOUR DATA IS SAFELY<br>ENCRYPTED AND IS SAFE FROM UNAUTHORIZED ACCESS</div>
+				
+				<div id="join">
+					<div class="jointext">
+						<div class="jointext1"><b>try Excel From Home today</b></div>
+							<div class="jointext2" style="margin-top:10px;">Get started right away. Money-back guarantee.</div>
+						</div>
+					<a href="https://excelfromhome.com/order.html?order=yes" target="_top"><div class="joinbttn">get started</div></a>
+				</div>
+			</div>
+		</div>
+		
+
+	
+	
+	
+	
+	
+	
+	<div id="footer" style="padding-top: 0px;">
+   		<div class="container">
+			<p class="info">
+                
+                <a href="https://excelfromhome.com/Disclaimer.htm" target="_blank" class="BlueLink" onclick="window.open(&#39;Disclaimer.htm&#39;,&#39;Disclaimer&#39;,&#39;scrollbars=yes,width=500,height=500&#39;); return false;">Earnings Disclaimer</a>
+                | 
+                <a href="https://excelfromhome.com/PrivacyPolicy.htm" target="_blank" class="BlueLink" onclick="window.open(&#39;PrivacyPolicy.htm&#39;,&#39;PrivacyPolicy&#39;,&#39;scrollbars=yes,width=500,height=500&#39;); return false;">Privacy Policy</a>
+                | 
+                <a href="https://excelfromhome.com/terms.cfm" target="_blank" class="BlueLink" onclick="window.open(&#39;terms.cfm&#39;,&#39;TermsandConditions&#39;,&#39;scrollbars=yes,width=515,height=500&#39;); return false;">Terms and Conditions</a>
+                
+                </p>
+                
+             
+                <p class="info">
+	© 2014 All Rights Reserved - Excel From Home System<br>
+		
+	
+		</p>
+		
+		
+       </div>
+    </div>
+    
+
+
+	</body></html>

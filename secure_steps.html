@@ -1,0 +1,405 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0101)https://excelfromhome.com/tpl/lp-occ/77_checkout_occ.php?s_id=264qrcr7i5asafecbkd8qcq5t5&oid=1327& -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>Secure Checkout</title>
+		
+	<link href="https://excelfromhome.com/css/layout_style.css.php" rel="stylesheet" type="text/css">
+<link href="https://excelfromhome.com/layout/layered/css/global.css.php" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://excelfromhome.com/wdt/ecommerce/css/ecommerce.css" type="text/css">
+<!-- global custom styles -->
+<link rel="stylesheet" href="https://excelfromhome.com/css/site-standard.css.php" type="text/css">
+<!-- custom page styles -->
+<link rel="stylesheet" href="https://excelfromhome.com/css/page.css.php?pid=18227" type="text/css">
+		
+	<script type="text/javascript" src="https://excelfromhome.com/js3/jquery/jquery-1.4.2.min.js"></script>
+<script type="text/javascript">$jq = jQuery.noConflict();</script>
+<script type="text/javascript" src="https://excelfromhome.com/js3/jquery/jquery.maskedinput.min.js"></script>
+<script type="text/javascript" src="https://excelfromhome.com/wdt/ecommerce/js/oform.js"></script>
+		
+	</head>
+
+<body id="page-18227" class="landing-body">
+
+
+<!-- siteframe -->
+<div id="siteframe">
+	<!-- content -->
+	<div id="content">
+		<div id="_page_content"><div class="column_100">
+	<div id="main" min_height="400" style="; width: 100%"><link rel="stylesheet" href="https://excelfromhome.com/js3/jquery/jquery-ui-1.8.css" type="text/css">
+<script type="text/javascript" src="https://excelfromhome.com/js3/jquery/jquery-ui-1.8.js"></script>
+	
+	<script type="text/javascript">
+	var usDoRedirect = true;
+	var popup = null;
+	
+	jQuery(document).ready( function()
+	{
+		var image_path = '';
+		//A. Safari
+			    	
+	    //B. Internet Explorer
+		  
+		    if( jQuery.browser.msie){
+				image_path = '/images/ie_pop.png';
+			 }
+		   	    
+   	    //C. Mozilla Firefox
+			    if( jQuery.browser.mozilla){
+			image_path = '/images/ff_pop.jpg';
+			 }
+		   	       	   	    
+   	  	//D. Chrome
+				if(/chrom(e|ium)/.test(navigator.userAgent.toLowerCase())){
+			image_path = '/images/gc_pop.png';
+			 }
+		
+		 //if ($.browser.opera)
+		 
+		alert_message = "*********************************\nToday's Special - $130.00 Discount!\n*********************************\n\nHOLD ON... Before You Leave:\n\nI really want to get you started today so I will slash another $130.00 off. It's yours for only $67.00!\n\nClick 'Stay on this Page' below to activate your discount.\n\n*********************************\nToday's Special - $130.00 Discount!\n*********************************" ;
+
+
+   		popup = jQuery(document.body).append('<div id="popupBrowserImg" style="position: fixed; top:10px; right: 10px; display: none; "> <img src="'+image_path+'"/> </div>');
+		dialog_style = jQuery(document.body).append('<style> #dialog  {	text-align: left; }   .alert-dialog{width: auto; } </style>');
+   		dialog = jQuery(document.body).append('<div id="dialog" title="Are you sure you want to leave this page?" style="display: none;"> <pre>' +  alert_message + '</pre></div>');
+ 	
+   		
+		// solo como prueba una imagen display:none;
+		//jQuery(document.body).append('<div id="rrrr" ><img src="http://www.hollywoodreporter.com/sites/default/files/2012/12/img_logo_blue.jpg" /></div>').css('top', '100px');
+		//document.getElementById('rrrr').style.display='none';
+		
+		//Verificamos si la capa esta oculta o no y como resultado
+		//indicamos que cambie su valor distinto al actual. "none" o "block"
+
+		/**	
+		 * The first setTimeout method has a delay of 1ms. This is just to add the function into the UI queue. 
+		 * Since setTimeout runs asynchronously the Javascript interpreter will continue by directly calling 
+		 * the return statement, which in turn triggers the browsers modal dialog. This will block the UI queue 
+		 * and the code from the first setTimeout is not executed, until the modal is closed. 
+		 * If the user pressed cancel, it will trigger another setTimeout which fires in about one second. 
+		 * If the user confirmed with ok, the user will redirect and the second setTimeout is never fired.
+		 **/
+
+		
+		 
+		redirectInterval = setInterval(function()
+		{
+			
+			if(jQuery('#redirectWebkit').val() == '1')
+			{
+				usDoRedirect = false;
+				clearInterval(redirectInterval);
+				jQuery('#redirectWebkit').val('0');
+				top.location.assign('https://www.safeserversonline.com/tpl/lp-occ/77_checkout_occ.php?s_id=264qrcr7i5asafecbkd8qcq5t5&oid=1327&&_ds_doredirect=true&s_id=264qrcr7i5asafecbkd8qcq5t5');
+			}
+		}, 2000 );
+
+
+		window.onbeforeunload = function(e)
+		{
+					 
+			//open thickbox
+			if(usDoRedirect)
+			{
+				
+				jQuery('#popupBrowserImg').show();
+
+				// Microsoft Internet Explorer
+				if(  jQuery.browser.msie )
+				{
+					alert(alert_message);
+					
+					setTimeout( function(){
+						setTimeout( function(){
+							// Avoid print dialog again
+							usDoRedirect = false;
+							top.location.assign('https://www.safeserversonline.com/tpl/lp-occ/77_checkout_occ.php?s_id=264qrcr7i5asafecbkd8qcq5t5&oid=1327&&_ds_doredirect=true&s_id=264qrcr7i5asafecbkd8qcq5t5');
+						}, 1000 );
+					}, 1 );
+					
+					return '';
+				}
+					
+				// Mozilla Firefox
+				if( jQuery.browser.mozilla  )
+				{
+					//alert(alert_message);
+					
+					setTimeout( function(){
+						setTimeout( function(){
+							// Avoid print dialog again
+							usDoRedirect = false;
+							top.location.assign('https://www.safeserversonline.com/tpl/lp-occ/77_checkout_occ.php?s_id=264qrcr7i5asafecbkd8qcq5t5&oid=1327&&_ds_doredirect=true&s_id=264qrcr7i5asafecbkd8qcq5t5');
+						}, 1000 );
+					}, 1 );
+					
+					//return '';
+
+					 jQuery("#dialog").dialog({
+							//position: {my: "center top", at: "center top", of: window	},
+							resizable: false,
+							dialogClass: "alert-dialog",
+							//width: 880,
+						 });
+					 	jQuery(".alert-dialog").css("width", "auto");
+						jQuery(".alert-dialog").css("top", "0");
+						//alert_dialog_width =  jQuery(".alert-dialog").css("width");
+						var alert_dialog_position = jQuery(".alert-dialog").position();
+						console.log( alert_dialog_position.left );
+						alert_dialog_width =  jQuery(".alert-dialog").width();
+						//alert_dialog_left	=   position.left ; //jQuery(".alert-dialog").attr("left");
+						console.log(alert_dialog_position.left );
+						var  alert_dialog_new_left_position = alert_dialog_position.left - (alert_dialog_width / 3);
+						console.log(alert_dialog_new_left_position );
+						jQuery(".alert-dialog").css("left", alert_dialog_new_left_position ) ;
+						jQuery(".alert-dialog").css("z-index", 9999 ) ;
+												
+						console.log(alert_dialog_width );
+						
+						return ' ';
+
+					
+				}
+				
+
+				// Opera
+				// Opera doesn't support onbeforeunload method
+				
+				// Google Chrome and Apple Safari and releases after version 12.14 of Opera
+				if( jQuery.browser.webkit ){
+
+					jQuery('#popupBrowserImg').show();
+					jQuery("#popupBrowserImg").css({display: "block"});
+					jQuery('#redirectWebkit').val('1');		
+
+				//	setTimeout(function() {
+				//   	return alert_message;
+				//	}, 50);		
+
+					return alert_message;
+				}
+			}
+			
+		};
+
+				 jQuery('a').click( function(){ usDoRedirect = false; });
+		 		 jQuery('form').submit( function(){ usDoRedirect = false; });
+		 	});
+
+	</script>
+	<input type="hidden" name="redirectWebkit" id="redirectWebkit" value="0">
+
+	<div style="">
+		<form id="form_60484" name="form_60484" style="margin: 5px 0px 0px 0px; padding: 0px;">
+		<div id="form_body_60484">
+			<dl class="form" style="width: 100%">
+			<div class="cof-field tb"><dt class="cof-field-label left">First Name</dt><dd class="cof-field-input left"><input type="text" name="f_name_60484" id="f_name_60484" value=""></dd></div><div class="cof-field tb"><dt class="cof-field-label left">Last Name</dt><dd class="cof-field-input left"><input type="text" name="l_name_60484" id="l_name_60484" value=""></dd></div><div class="cof-field tb"><dt class="cof-field-label left">E-mail Address</dt><dd class="cof-field-input left"><input type="text" name="email_60484" id="email_60484" value=""></dd></div><div class="cof-field tb"><dt class="cof-field-label left">Phone</dt><dd class="cof-field-input left"><input type="text" name="phone_60484" id="phone_60484" value=""></dd></div><div class="cof-field tb"><dt class="cof-field-label left">Address</dt><dd class="cof-field-input left"><input type="text" name="address_60484" id="address_60484" value=""></dd></div><div class="cof-field tb"><dt class="cof-field-label left">City</dt><dd class="cof-field-input left"><input type="text" name="city_60484" id="city_60484" value=""></dd></div><div class="cof-field tb"><dt class="cof-field-label left">Zip</dt><dd class="cof-field-input left"><input type="text" name="zip_60484" id="zip_60484" value=""></dd></div><div class="cof-field tb"><dt class="cof-field-label left">Country</dt><dd class="cof-field-input left"><select id="country_60484" name="country_60484" style="width: 100%"><option value="US">United States of America</option><option value="CA">Canada</option><option value="AU">Australia</option><option value="NZ">New Zealand</option></select></dd></div><div class="cof-field tb"><dt class="cof-field-label left">State</dt><dd class="cof-field-input left"><select id="state_60484" name="state_60484" style="width:100%"><option value="AL">Alabama</option><option value="AK">Alaska</option><option value="AZ">Arizona</option><option value="AR">Arkansas</option><option value="CA">California</option><option value="CO">Colorado</option><option value="CT">Connecticut</option><option value="DE">Delaware</option><option value="FL">Florida</option><option value="GA">Georgia</option><option value="HI">Hawaii</option><option value="ID">Idaho</option><option value="IL">Illinois</option><option value="IN">Indiana</option><option value="IA">Iowa</option><option value="KS">Kansas</option><option value="KY">Kentucky</option><option value="LA">Louisiana</option><option value="ME">Maine</option><option value="MD">Maryland</option><option value="MA">Massachusetts</option><option value="MI">Michigan</option><option value="MN">Minnesota</option><option value="MS">Mississippi</option><option value="MO">Missouri</option><option value="MT">Montana</option><option value="NE">Nebraska</option><option value="NV">Nevada</option><option value="NH">New Hampshire</option><option value="NJ">New Jersey</option><option value="NM">New Mexico</option><option value="NY">New York</option><option value="NC">North Carolina</option><option value="OH">Ohio</option><option value="OK">Oklahoma</option><option value="OR">Oregon</option><option value="PA">Pennsylvania</option><option value="RI">Rhode Island</option><option value="SC">South Carolina</option><option value="SD">South Dakota</option><option value="TN">Tennessee</option><option value="TX">Texas</option><option value="UT">Utah</option><option value="VT">Vermont</option><option value="VA">Virginia</option><option value="WA">Washington</option><option value="WV">West Virginia</option><option value="WI">Wisconsin</option><option value="WY">Wyoming</option></select></dd></div><div class="cof-field tb"><dt class="cof-field-label left">Card Number</dt><dd class="cof-field-input left"><input type="text" name="cc_number_60484" id="cc_number_60484" value=""></dd></div><div class="cof-field tb"><dt class="cof-field-label left">CVC</dt><dd class="cof-field-input left"><input type="text" name="cc_cvv_60484" id="cc_cvv_60484" value="" style="width: 30%;"></dd></div><div class="cof-field tb"><dt class="cof-field-label left">Expiration</dt>							<dd class="cof-field-input left">
+								<select id="exp_month_60484" name="exp_month_60484" style="width: 100px">
+																		<option value="1">(1) January</option>
+																		<option value="2">(2) February</option>
+																		<option value="3">(3) March</option>
+																		<option value="4">(4) April</option>
+																		<option value="5">(5) May</option>
+																		<option value="6">(6) June</option>
+																		<option value="7">(7) July</option>
+																		<option value="8">(8) August</option>
+																		<option value="9">(9) September</option>
+																		<option value="10">(10) October</option>
+																		<option value="11">(11) November</option>
+																		<option value="12">(12) December</option>
+																</select>&nbsp;/&nbsp;
+								<select id="exp_year_60484" name="exp_year_60484" style="width: 75px;">
+																		<option value="2015">2015</option>
+																		<option value="2016">2016</option>
+																		<option value="2017">2017</option>
+																		<option value="2018">2018</option>
+																		<option value="2019">2019</option>
+																		<option value="2020">2020</option>
+																		<option value="2021">2021</option>
+																		<option value="2022">2022</option>
+																		<option value="2023">2023</option>
+																		<option value="2024">2024</option>
+																</select>
+							</dd>
+					</div>			</dl>
+			<div style="clear: both;"></div>
+							<div><img height="135" src="https://excelfromhome.com/images/autocd.png" style="float: left;" width="194"><span style="color: #3366ff; font-size: medium;"><strong><br><br>Instant Access To A Work-</strong></span><br><span style="color: #3366ff; font-size: medium;"><strong> At-Home Educational System<br></strong></span>
+<h2><span style="font-size: x-large; color: #339966;">ORDER NOW!</span></h2>
+<p><img height="32" src="https://excelfromhome.com/images/green-arrow6.png" width="16"></p></div>
+						<div>
+								<button id="submit-button60484" onclick="sendOfferingForm(60484, &#39;/wdt/ecommerce/ajax/cform.php&#39;); return false;"><div></div></button>
+				<div id="progress-bar60484" style="display: none; background: transparent url(&#39;/wdt/ecommerce/images/loading_bar.gif&#39;); border: 1px solid black; width: 162px; height: 14px;"></div>
+				<div style="clear: left;"></div>
+			</div>
+		</div>
+	</form>
+</div>
+<script type="text/javascript">
+jQuery(document).ready(function()
+{	
+	if(jQuery('#phone_60484').length > 0)
+	{
+					jQuery('#phone_60484').mask('(999) 999-9999');
+				
+		if(jQuery('#country_60484').length > 0)
+		{
+			jQuery('#country_60484').change(function()
+			{
+				if(jQuery(this).val() == 'US'){
+					jQuery('#phone_60484').mask('(999) 999-9999');
+				}
+				else{
+					jQuery('#phone_60484').mask('+999 - 99999999');
+				}
+			});
+		}
+	}
+
+			jQuery("#country_60484").change(function(){
+			getStateInput( 60484, '/wdt/ecommerce/ajax/get_state_input.php', '' );
+		});
+		// Call when page loads
+		getStateInput( 60484, '/wdt/ecommerce/ajax/get_state_input.php', '' );
+	});
+</script>
+<div>
+	<div id="header">
+<div class="logo-secure"><img alt="Secure Payment Solutions" src="https://excelfromhome.com/images/secure-logo6.png" title="Secure Payment Solutions"></div>
+<div class="secure-website">
+<div class="lock"><img src="https://excelfromhome.com/images/lock6.png"></div>
+<div class="secure-payment-txt ">Secure Payment Website For:<br><strong>Online Cash<br></strong></div>
+</div>
+</div></div>
+
+
+<div>
+	<div id="top">
+<div id="start-finish-section">
+<ul>
+<li class="start"><a class="current" href="https://excelfromhome.com/tpl/lp-occ/77_checkout_occ.php?s_id=264qrcr7i5asafecbkd8qcq5t5&oid=1327&#" title="START"></a></li>
+<li class="delivery"><a href="https://excelfromhome.com/tpl/lp-occ/77_checkout_occ.php?s_id=264qrcr7i5asafecbkd8qcq5t5&oid=1327&#"></a></li>
+<li class="customize"><a href="https://excelfromhome.com/tpl/lp-occ/77_checkout_occ.php?s_id=264qrcr7i5asafecbkd8qcq5t5&oid=1327&#" title="CUSTOMIZE YOUR ORDER"></a></li>
+<li class="finish"><a href="https://excelfromhome.com/tpl/lp-occ/77_checkout_occ.php?s_id=264qrcr7i5asafecbkd8qcq5t5&oid=1327&#" title="FINISH"></a></li>
+</ul>
+</div>
+<div id="secure-payment-form-section">
+<div class="secure-payment-form-1">
+<div class="encryption-txt">256 Bit Encryption</div>
+<div class="secure-payment-form-txt">Secure Payment Form</div>
+</div>
+<div class="secure-payment-form-2">
+<div class="total-payment-section">
+<div class="total-payment-1">
+<div class="item-txt">Item</div>
+<div class="price-txt-1">Price (USD)</div>
+</div>
+<div class="total-payment-2">
+<div class="item-price-section">
+<div class="item-product-section">
+<div class="item-product"><img height="39" src="https://excelfromhome.com/images/local-home6.png" width="62"></div>
+<div class="item-product-txt">Online Cash<br> Instant Access To A Work-At-Home Trainning Course!</div>
+</div>
+<div class="price-txt-2"><span style="text-decoration: line-through; color: #ff0000;">$197.00 </span> / 77.00<br> <span>TAX: $0.00</span></div>
+</div>
+<div class="total-section">
+<div class="immediate-txt">Immediate access to this product or service is available once payment is approved.</div>
+<div class="total-txt">TOTAL Payment:</div>
+<div class="price-txt-3">
+<h3>77.00</h3>
+One payment (USD)</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+
+
+<div>
+	<div id="information-section">
+<div class="information-section-1">
+<div class="pay-txt">Pay with Credit or Debit Card</div>
+<div style="position: relative; top: 0; left: 0; margin-top: 20px; border-left: 1px solid #CCCCCC; border-right: 1px solid #CCCCCC; border-bottom: 1px solid #CCCCCC; height: 780px;">
+<h2 style="padding-top: 25px; padding-left: 15px; font-size: 16px; font-weight: bold; color: #006fec;">Personal Information</h2>
+<div style="position: absolute; top: 335px; left: 0px;">
+<h2 style="padding-top: 25px; padding-left: 15px; font-size: 16px; font-weight: bold; color: #006fec;">Payment Information</h2>
+<div style="float: left; margin-top: 15px; margin-left: 50px; font-size: 15px;"><span>We Accept</span></div>
+<div style="float: left; margin-top: 15px; margin-left: 73px; font-size: 16px;"><img height="24" src="https://excelfromhome.com/images/cards.jpg" width="158"></div>
+<div style="clear: both;"></div>
+</div>
+</div>
+</div>
+<div class="information-section-2">
+<div class="secure-payment-section">
+<div class="secure-payments">Secure Payments</div>
+<div class="secure-payments-matter">This is a secure website your personal data is safely encrypted and is protected from unauthorized access.<br> <img src="https://excelfromhome.com/images/verified-logo-16.png"><img src="https://excelfromhome.com/images/verified-logo-26.png"><img src="https://excelfromhome.com/images/verified-logo-16.png"><img src="https://excelfromhome.com/images/verified-logo-36.png"></div>
+</div>
+<div class="secure-logo-section"><img alt="TRUSTe" src="https://excelfromhome.com/images/truste6.jpg" title="TRUSTe"><img alt="VeriSign Secured&#39;) }}" src="https://excelfromhome.com/images/verisign6.jpg" title="VeriSign Secured"><img alt="McAfee SECURE" src="https://excelfromhome.com/images/mcafee6.jpg" title="McAfee SECURE"><br><img height="70" src="https://excelfromhome.com/images/cardverifi.jpg" style="padding-top: 15px;" width="199"><img height="53" src="https://excelfromhome.com/images/authnet.png" style="padding-bottom: 5px;" width="163"></div>
+<div class="secure-payment-list-section">
+<div class="secure-payment-list">
+<ul>
+<li>Instant Processing</li>
+<li>Immediate Product Access</li>
+<li>Secure Transaction</li>
+<li>30 Day Refund Policy</li>
+<li>Fast and Convenient</li>
+</ul>
+</div>
+<div class="secure-payment-list">
+<ul>
+<li>Print &amp; Email Receipts</li>
+<li>Safe Record Keeping</li>
+<li>Dedicated Customer Service</li>
+<li>Verified Business Authority</li>
+</ul>
+</div>
+</div>
+<div class="satisfaction-guarantee">
+<div class="satisfaction-guarantee-badge"><img alt="100% SATISFACTION GUARANTEED" src="https://excelfromhome.com/images/guarantee-badge6.png" title="100% SATISFACTION GUARANTEED"><br><br><br><br></div>
+</div>
+</div>
+</div></div>
+
+
+<div>
+	<div id="footer">
+<div class="container">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<br>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Copyright © 2011</p>
+<p><a href="https://excelfromhome.com/tpl/_disc/privacy_policy.php" target="_blank">Privacy Policy</a> |              <a href="https://excelfromhome.com/tpl/_disc/disclaimer.php" target="_blank">Disclaimer</a> |              <a href="https://excelfromhome.com/tpl/_disc/refund_policy.php" target="_blank">Refund Policy</a> |              <a href="https://excelfromhome.com/tpl/_disc/customer_support.php" target="_blank">Customer Support</a> |             <a href="https://excelfromhome.com/tpl/_disc/terms.php" target="_blank">Terms &amp; Conditions</a></p>
+<p>This site and the products and services offered on this site are not associated, affiliated, endorsed, or sponsored by Google, Twitter, Facebook, or Myspace nor have they been reviewed tested or certified by Google, Twitter, Facebook or Myspace. All trademarks, logos, and service marks(collectively "Trademarks") displayed are registered and/or unregistered Trademarks of their respective owners. For purpose of privacy, testimonial pictures have been adapted and are not their actual photos. Results may vary, testimonials are not typical results. All testimonials have been remunerated.</p>
+</div>
+</div></div>
+
+
+</div></div>
+<div style="clear: both;"></div>
+</div>		<div style="clear: both;"></div>
+	</div>
+	<!-- end content -->	
+</div>
+<!--  end siteframe -->
+
+
+<div id="popupBrowserImg" style="position: fixed; top:10px; right: 10px; display: none; "> <img src="https://excelfromhome.com/images/gc_pop.png"> </div><style> #dialog  {	text-align: left; }   .alert-dialog{width: auto; } </style><div id="dialog" title="Are you sure you want to leave this page?" style="display: none;"> <pre>*********************************
+Today's Special - $130.00 Discount!
+*********************************
+
+HOLD ON... Before You Leave:
+
+I really want to get you started today so I will slash another $130.00 off. It's yours for only $67.00!
+
+Click 'Stay on this Page' below to activate your discount.
+
+*********************************
+Today's Special - $130.00 Discount!
+*********************************</pre></div></body></html>
